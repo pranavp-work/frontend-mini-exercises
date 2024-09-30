@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Experience Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #141a26;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #1e2638;
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%;
+            height: 25vh; /* 1/4th of the viewport height */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.9em;
+            color: #b0b5c1;
+        }
+
+        .skills {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            background-color: #2b364e;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            color: #68c8c5;
+        }
+
+        .date {
+            color: #ffffff;
+            font-size: 0.85em;
+        }
+
+        .company {
+            font-size: 1.1em;
+            color: #ffffff;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div>
+                <p class="date">2024 — PRESENT</p>
+                <h3>Senior Frontend Engineer, Accessibility</h3>
+                <p class="company">
+                    <a href="https://www.klaviyo.com" target="_blank">Klaviyo</a>
+                </p>
+                <p>
+                    Build and maintain critical components used to construct Klaviyo’s frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.
+                </p>
+            </div>
+            <div class="skills">
+                <span class="skill">JavaScript</span>
+                <span class="skill">TypeScript</span>
+                <span class="skill">React</span>
+                <span class="skill">Storybook</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

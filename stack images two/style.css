@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.image-stack {
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+
+.stacked-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Make sure the first image is visible by default */
+input#image1:checked ~ .images img:nth-child(1) {
+    opacity: 1;
+}
+
+input#image2:checked ~ .images img:nth-child(2) {
+    opacity: 1;
+}
+
+input#image3:checked ~ .images img:nth-child(3) {
+    opacity: 1;
+}
+
+/* Hide radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Styling buttons to change images */
+.btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 10px 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #999;
+}
+
+/* Optional: Style the buttons when checked */
+input#image1:checked ~ label[for="image1"] {
+    background-color: #555;
+}
+input#image2:checked ~ label[for="image2"] {
+    background-color: #555;
+}
+input#image3:checked ~ label[for="image3"] {
+    background-color: #555;
+}
+
+.images {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
